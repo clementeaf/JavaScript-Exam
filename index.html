@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Piedra-Papel-Tijera</title>
+</head>
+<body>
+    <header>Hand-Scissors-Rock</header>
+
+    <section>
+        <article id="art1">
+            <input type="text" placeholder="User" id="user">
+            <input type="text" placeholder="Password" id="pass">
+            <button id="btn" onclick="playGame()">PLAY</button>   
+            <p>user: player</p>
+            <p>password: password</p>
+        </article>
+        <article id="art2">
+            <div class="box">
+                <div id="box-play">
+                    <div id="gamer">
+                        <h3>User</h3>
+                        <img id="userImg" >
+                    </div>
+                    <p>V/S</p>
+                    <div id="pc">
+                        <h3>PC</h3>
+                        <img id="AiImg" >
+                    </div>
+                    <div id="score">
+                        <div id="results">Results
+                            <p id="resNum"></p>
+                        </div>
+                        <div id="gameR">Game Results
+                            <p id="playN"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="select">
+                    <h3 id="click-on">Your choice ...</h3>
+                    <img class="rock" id="rock" src="./images/rock.svg" alt="#">
+                    <img  class="scissors" id="scissors" src="./images/scissors.svg" alt="#">
+                    <img class="paper" id="hand" src="./images/hand.svg" alt="#">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>Designed by Clemente Falcone 2021</footer>
+    <script src="./app.js"></script>
+</body>
+</html>
