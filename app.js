@@ -13,8 +13,8 @@ function playGame(){
     if(user.value === 'player' && pass.value === 'password'){
         login.style.display = 'none';
         game.style.display = 'flex';
-    } else if (user.value !== 'player' && pass.value !== 'password'){
-        err1.innerHTML = 'User or /and password incorrect'
+    } else if (user.value != 'player' || pass.value != 'password'){
+        alert('User and/or password incorrect');
     }
 };
 
